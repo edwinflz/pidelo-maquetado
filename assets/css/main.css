@@ -307,8 +307,8 @@ button:hover {
 
 /***** FOOTER ******/
 .footer {
-  background-color: var(--third-color);
-  color: var(--white-color);
+  background-color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .footer p {
@@ -332,7 +332,7 @@ button:hover {
 }
 
 .footer__section a {
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
