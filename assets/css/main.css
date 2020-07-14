@@ -62,6 +62,11 @@ button:hover {
   position: relative;
 }
 
+.f-64 {
+  font-size: 64px;
+  color: var(--third-color);
+}
+
 .waves::before {
   content: '';
   position: absolute;
@@ -289,14 +294,54 @@ button:hover {
   display: none;
   position: fixed;
   bottom: 2%;
-  left: 35%;
   right: 0;
   z-index: 100;
+}
+
+.download__app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/***** FOOTER ******/
+.footer {
+  background-color: var(--third-color);
+  color: var(--white-color);
+}
+
+.footer p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__section .button_social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__section .button_social i {
+  font-size: 30px;
+}
+
+.footer__section a {
+  color: var(--white-color);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .header__info {
     display: none;
+  }
+
+  .card__title {
+    font-size: 1rem !important;
   }
 }
 
@@ -309,6 +354,25 @@ button:hover {
   .header__action button {
     margin-right: 1rem;
   }
+
+  .download__img {
+    text-align: center !important;
+  }
+
+  .download__img img {
+    height: 300px;
+  }
+
+  .footer__category {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+
+  .footer__section {
+    border-bottom: 1px solid var(--black-light-color);
+    padding-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -317,6 +381,13 @@ button:hover {
   }
   .carousel__inner .carousel-item img {
     height: 100% !important;
+  }
+
+  .header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
   }
 
   .header__phone {
@@ -330,5 +401,36 @@ button:hover {
 
   .btn__mobile {
     display: block;
+  }
+
+  .download__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer__category {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer__category a {
+    margin-right: 1rem;
+  }
+
+  .footer__section {
+    border-bottom: 1px solid var(--black-light-color);
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .card__title {
+    font-size: 1rem !important;
+  }
+
+  .button__app {
+    text-align: center !important;
   }
 }
