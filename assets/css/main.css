@@ -305,6 +305,16 @@ button:hover {
   align-items: center;
 }
 
+.card__category {
+  color: var(--black-color);
+  transition: color 0.4s;
+}
+
+.card__category:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 /***** FOOTER ******/
 .footer {
   background-color: var(--white-color);
@@ -333,6 +343,27 @@ button:hover {
 
 .footer__section a {
   color: var(--black-color);
+}
+
+/******PAGINA DE NEGOCIOS*******/
+.list-group-item:hover {
+  color: var(--primary-color) !important;
+}
+
+.card .card__img {
+  height: 100%;
+}
+
+.card__bussines:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card__description {
+  display: none;
+}
+
+.checked {
+  color: var(--second-color);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -372,6 +403,14 @@ button:hover {
   .footer__section {
     border-bottom: 1px solid var(--black-light-color);
     padding-bottom: 1rem;
+  }
+
+  .card .card__img {
+    height: 300px !important;
+  }
+
+  .card__description {
+    display: block;
   }
 }
 

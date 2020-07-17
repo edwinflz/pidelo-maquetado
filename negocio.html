@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negocio</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"
+    />
+  </head>
+  <body>
+    <header class="header shadow">
+      <div
+        class="container header__container border-bottom pt-2 pb-2 d-md-flex d-none"
+      >
+        <div class="header__brand">
+          <img
+            src="assets/img/restaurante-2.jpg"
+            alt="logo"
+            class="img-fluid mr-2"
+          />
+          <div class="header__info">
+            <p class="header__title">Pidelo</p>
+            <p>Centro Comercial Virtual</p>
+          </div>
+        </div>
+        <div class="header__search">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control input__search"
+              placeholder="Buscar producto ó negocio"
+              aria-label="Buscar producto ó negocio"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn button__third waves"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fas fa-search mr-2"></i>BUSCAR
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__login">
+          <button class="btn button__second waves">INGRESAR</button>
+          <button class="btn button__second waves btn__register">
+            REGISTRATE
+          </button>
+          <button class="btn button__third waves">
+            <i class="fas fa-cart-plus mr-2"></i
+            ><span class="badge badge-light">9</span>
+          </button>
+        </div>
+      </div>
+      <div class="container header__action pt-2 pb-2 d-md-flex d-none">
+        <div class="dropdown">
+          <button
+            class="btn button__second dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-map-marker-alt mr-2"></i>UBICACION
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="javascript:void(0)">Sincelejo</a>
+            <a class="dropdown-item" href="javascript:void(0)">Corozal</a>
+            <a class="dropdown-item" href="javascript:void(0)">Sampues</a>
+          </div>
+        </div>
+        <button class="btn button__second waves">
+          <i class="fas fa-home mr-2"></i>INICIO
+        </button>
+        <button class="btn button__second waves">
+          <i class="fas fa-bookmark mr-2"></i>CATEGORIAS
+        </button>
+        <button class="btn button__second waves">
+          <i class="fas fa-store mr-2"></i>MI NEGOCIO
+        </button>
+        <button class="btn button__second waves">
+          <i class="fas fa-user-circle mr-2"></i> MI PERFIL
+        </button>
+      </div>
+      <div class="container header__container header__phone pt-2 pb-2">
+        <button id="btnNav" class="btn button__third waves rounded-circle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="header__search ml-2">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control input__search"
+              placeholder="Buscar producto ó negocio"
+              aria-label="Buscar producto ó negocio"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn button__third waves"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fas fa-search mr-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__mobile">
+          <ul class="header__list separate mt-4">
+            <li class="header__item">
+              <a href="javascript:void(0)">
+                <i class="fas fa-users"></i>
+                <span>Usuario</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__list separate">
+            <li class="header__item">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle pl-0"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-map-marker-alt mr-2"></i>UBICACION
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    >Sincelejo</a
+                  >
+                  <a class="dropdown-item" href="javascript:void(0)">Corozal</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Sampues</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="header__list separate">
+            <li class="header__item">
+              <a href="javascript:void(0)">
+                <i class="fas fa-home"></i>
+                <span>home</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="javascript:void(0)">
+                <i class="fas fa-bookmark"></i>
+                <span>categorias</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="javascript:void(0)">
+                <i class="fas fa-store"></i>
+                <span>mi negocio</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="header__list separate">
+            <li class="header__item">
+              <a href="javascript:void(0)">
+                <i class="fas fa-cogs"></i>
+                <span>Configuración</span>
+              </a>
+            </li>
+
+            <li class="header__item">
+              <a href="javascript:void(0)">
+                <i class="fas fa-question"></i>
+                <span>Ayuda</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="javascript:void(0)">
+                <i class="fas fa-headset"></i>
+                <span>Soporte</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="btn button__primary btn-block waves">
+            SALIR
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <button class="btn button__primary waves btn__mobile rounded-pill">
+      <i class="fas fa-cart-plus mr-2"></i
+      ><span class="badge badge-light ml-2">9</span>
+    </button>
+
+    <section class="negocios mb-4">
+      <div class="container">
+        <h1 class="text-center mt-2">Restaurantes en Sincelejo</h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <button
+              type="button"
+              class="btn button__primary btn-block"
+              data-toggle="collapse"
+              data-target="#collapse-categorias"
+              aria-expanded="false"
+              aria-controls="collapse-categorias"
+            >
+              CATEGORIAS <i class="fas fa-bars ml-2"></i>
+            </button>
+            <div class="list-group" id="collapse-categorias">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Restautantes
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Licores
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Farmacias
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Tecnologia
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Jugueterias
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Panaderias
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Reposterias
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 mt-2 mb-2">
+                <div class="card card__bussines">
+                  <div class="row no-gutters">
+                    <div class="col-lg-6">
+                      <img
+                        src="assets/img/restaurant.jpg"
+                        alt="negocio"
+                        class="card-img card__img"
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card-body">
+                        <h5 class="card-title m-0">Pizzas Frank</h5>
+                        <span class="badge badge-danger mb-1">Abierto</span>
+                        <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted">Pizza</small>
+                          <br />
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <button class="btn btn-block button__third waves">
+                          ENTRAR
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-2 mb-2">
+                <div class="card card__bussines">
+                  <div class="row no-gutters">
+                    <div class="col-lg-6">
+                      <img
+                        src="assets/img/restaurant.jpg"
+                        alt="negocio"
+                        class="card-img card__img"
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card-body">
+                        <h5 class="card-title m-0">
+                          El Palacio del Colesterol
+                        </h5>
+                        <span class="badge badge-danger mb-1">Abierto</span>
+                        <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                
+                        <p class="card-text">
+                          <small class="text-muted">Comidas a la carta</small>
+                          <br />
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <button class="btn btn-block button__third waves">
+                          ENTRAR
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-2 mb-2">
+                <div class="card card__bussines">
+                  <div class="row no-gutters">
+                    <div class="col-lg-6">
+                      <img
+                        src="assets/img/store.jpg"
+                        alt="negocio"
+                        class="card-img card__img"
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card-body">
+                        <h5 class="card-title m-0">Plaza Latina</h5>
+                        <span class="badge badge-danger mb-1">Abierto</span>
+                        <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted">Licores</small>
+                          <br />
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <button class="btn btn-block button__third waves">
+                          ENTRAR
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-2 mb-2">
+                <div class="card card__bussines">
+                  <div class="row no-gutters">
+                    <div class="col-lg-6">
+                      <img
+                        src="assets/img/supermarket.jpg"
+                        alt="negocio"
+                        class="card-img card__img"
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card-body">
+                        <h5 class="card-title m-0">La Olimpica</h5>
+                        <span class="badge badge-danger mb-1">Abierto</span>
+                        <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted">Super Mercado</small>
+                          <br />
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                        <button class="btn btn-block button__third waves">
+                          ENTRAR
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="separate" />
+        <div class="row">
+          <div class="col-lg-4 mt-2 mb-2">
+            <div class="card card__bussines">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <img
+                    src="assets/img/restaurant.jpg"
+                    alt="negocio"
+                    class="card-img card__img"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h5 class="card-title m-0">Pizzas Frank</h5>
+                    <span class="badge badge-danger mb-1">Abierto</span>
+                    <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                    <p class="card-text">
+                      <small class="text-muted">Pizza</small>
+                      <br />
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <button class="btn btn-block button__third waves">
+                      ENTRAR
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-2 mb-2">
+            <div class="card card__bussines">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <img
+                    src="assets/img/restaurant.jpg"
+                    alt="negocio"
+                    class="card-img card__img"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h5 class="card-title m-0">El Palacio del Colesterol</h5>
+                    <span class="badge badge-danger mb-1">Abierto</span>
+                    <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                    <p class="card-text">
+                      <small class="text-muted">Comidas a la carta</small>
+                      <br />
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <button class="btn btn-block button__third waves">
+                      ENTRAR
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-2 mb-2">
+            <div class="card card__bussines">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <img
+                    src="assets/img/store.jpg"
+                    alt="negocio"
+                    class="card-img card__img"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h5 class="card-title m-0">Plaza Latina</h5>
+                    <span class="badge badge-danger mb-1">Abierto</span>
+                    <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                    <p class="card-text">
+                      <small class="text-muted">Licores</small>
+                      <br />
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <button class="btn btn-block button__third waves">
+                      ENTRAR
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-2 mb-2">
+            <div class="card card__bussines">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <img
+                    src="assets/img/supermarket.jpg"
+                    alt="negocio"
+                    class="card-img card__img"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h5 class="card-title m-0">La Olimpica</h5>
+                    <span class="badge badge-danger mb-1">Abierto</span>
+                    <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                    <p class="card-text">
+                      <small class="text-muted">Super Mercado</small>
+                      <br />
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <button class="btn btn-block button__third waves">
+                      ENTRAR
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-2 mb-2">
+            <div class="card card__bussines">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <img
+                    src="assets/img/restaurant.jpg"
+                    alt="negocio"
+                    class="card-img card__img"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h5 class="card-title m-0">Pizzas Frank</h5>
+                    <span class="badge badge-danger mb-1">Abierto</span>
+                    <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                    <p class="card-text">
+                      <small class="text-muted">Pizza</small>
+                      <br />
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <button class="btn btn-block button__third waves">
+                      ENTRAR
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-2 mb-2">
+            <div class="card card__bussines">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <img
+                    src="assets/img/restaurant.jpg"
+                    alt="negocio"
+                    class="card-img card__img"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h5 class="card-title m-0">El Palacio del Colesterol</h5>
+                    <span class="badge badge-danger mb-1">Abierto</span>
+                    <p class="card-text card__description">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                    <p class="card-text">
+                      <small class="text-muted">Comidas a la carta</small>
+                      <br />
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <button class="btn btn-block button__third waves">
+                      ENTRAR
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12 col-12 text-center">
+            <button class="btn button__primary waves" disabled>
+              <span
+                class="spinner-border spinner-border-sm mb-1"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              VER MAS
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer shadow rounded">
+      <div class="container p-3 separate">
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="text-center">Categorias</p>
+            <div class="row">
+              <div class="col-lg-6 footer__section footer__category">
+                <a href="javascript:void(0)">Restaurantes</a>
+                <a href="javascript:void(0)">Licores</a>
+                <a href="javascript:void(0)">Farmacias</a>
+                <a href="javascript:void(0)">Tecnologia</a>
+                <a href="javascript:void(0)">Jugueterias</a>
+                <a href="javascript:void(0)">Mascotas</a>
+              </div>
+              <div class="col-lg-6 footer__section footer__category">
+                <a href="javascript:void(0)">Bebes</a>
+                <a href="javascript:void(0)">Panaderias</a>
+                <a href="javascript:void(0)">Ropa y Calzado</a>
+                <a href="javascript:void(0)">Floristerias</a>
+                <a href="javascript:void(0)">Pesqueras</a>
+                <a href="javascript:void(0)">Belleza</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 footer__section">
+            <p class="text-center">Información de interés</p>
+            <a href="javascript:void(0)">Terminos y condiciones</a>
+            <a href="javascript:void(0)">Registra tu negocio</a>
+            <a href="javascript:void(0)">Politica de tratamiento de datos</a>
+          </div>
+          <div class="col-lg-4 footer__section">
+            <p class="text-center">Descarga la App</p>
+            <div class="button__app text-center">
+              <img
+                src="assets/img/play-store_play-store-es.png"
+                alt="play store"
+                width="140"
+                height="70"
+              />
+              <img
+                src="assets/img/apple-store_app-store-es.svg"
+                alt="app store"
+                width="140"
+                height="70"
+              />
+            </div>
+            <p class="text-center">Siguenos en</p>
+            <div class="button_social">
+              <a href="javascript:void(0)">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="javascript:void(0)">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="javascript:void(0)">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="javascript:void(0)">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>
+              <span
+                >© 2020 Pidelo Centro Comercial Virtual. Todos los derechos
+                reservados</span
+              >
+            </p>
+            <p>
+              Pidelo.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="overlayMobile" class="overlay__mobile"></div>
+
+    <script src="plugins/jquery/jquery-3.4.0.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
