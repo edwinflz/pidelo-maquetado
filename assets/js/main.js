@@ -4,34 +4,36 @@ const overlay = document.querySelector('#overlayMobile');
 
 btnNav.addEventListener('click', (e) => {
   e.preventDefault();
-  isClassActive(headerMobile) ? hideHeaderMobile() : showHeaderMobile();
+  isClassActive(headerMobile)
+    ? hideNavMobile(headerMobile, btnNav)
+    : showNavMobile(headerMobile, btnNav);
 });
 
 const isClassActive = (element) => {
   return element.classList.contains('active');
 };
 
-const showHeaderMobile = () => {
-  headerMobile.classList.add('active');
+const showNavMobile = (element, button) => {
+  element.classList.add('active');
   overlay.classList.add('active');
   changeOverflowBody('hidden');
-  changeElementNav('fa-times-circle');
+  changeElementNav('fa-times-circle', button);
 };
 
-const hideHeaderMobile = () => {
-  headerMobile.classList.remove('active');
+const hideNavMobile = (element, button) => {
+  element.classList.remove('active');
   overlay.classList.remove('active');
   changeOverflowBody('visible');
-  changeElementNav('fa-bars');
+  changeElementNav('fa-bars', button);
 };
 
 const changeOverflowBody = (overflow) => {
   document.querySelector('body').style.overflow = overflow;
 };
 
-const changeElementNav = (icon) => {
-  btnNav.innerHTML = '';
+const changeElementNav = (icon, button) => {
+  button.innerHTML = '';
   let element = document.createElement('li');
   element.classList.add('fas', icon);
-  btnNav.appendChild(element);
+  button.appendChild(element);
 };
